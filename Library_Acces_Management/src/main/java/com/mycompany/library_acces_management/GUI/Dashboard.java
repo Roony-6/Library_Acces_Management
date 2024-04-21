@@ -9,6 +9,7 @@ public class Dashboard extends javax.swing.JFrame {
 
     public Dashboard() {
         initComponents();
+        this.setLocationRelativeTo(null);
         PnlInicio panelInicio= new PnlInicio();
         showPanel(panelInicio);
     }

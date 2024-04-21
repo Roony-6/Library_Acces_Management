@@ -32,6 +32,9 @@ public class PersistenceController {
         return administradorJPA.findAdminisrador(id);
         
     }
+    public List<Adminisrador> traerAdmin(){
+        return administradorJPA.findAdminisradorEntities();
+    }
     public void editAdmin(Adminisrador administrador){
         try {
             administradorJPA.edit(administrador);

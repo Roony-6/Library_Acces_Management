@@ -20,6 +20,9 @@ public class LogicController {
     public Adminisrador findAdmin(int id){
        return controlPersistence.findAdmin(id);
     }
+    public List<Adminisrador> traerAdmin(){
+        return controlPersistence.traerAdmin();
+    }
     public void deleteAdmin(int id){
         controlPersistence.destroyAdmin(id);
     }

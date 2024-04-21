@@ -36,6 +36,11 @@ public class pnlAdministrador extends javax.swing.JPanel {
         });
 
         jButton1.setText("Administradores");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         jButton2.setText("Mesas");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -105,7 +110,7 @@ public class pnlAdministrador extends javax.swing.JPanel {
 
     public void showPanel(JPanel panel){
         
-        panel.setSize(548, 433);
+        panel.setSize(615, 433);
         panel.setLocation(0,0);
         
         pnlContentAdmin.removeAll();
@@ -123,6 +128,11 @@ public class pnlAdministrador extends javax.swing.JPanel {
         pnlTablaMesa pnlTablaMesa= new  pnlTablaMesa();
         showPanel(pnlTablaMesa);
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        pnlTablaAdmin pnlTableAdmin= new pnlTablaAdmin();
+        showPanel(pnlTableAdmin);
+    }//GEN-LAST:event_jButton1ActionPerformed
 
  
     
