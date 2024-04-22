@@ -13,6 +13,7 @@ com\mycompany\library_acces_management\GUI\formModificarAlumno.class
 com\mycompany\library_acces_management\LOGIC\Alumno_.class
 com\mycompany\library_acces_management\GUI\Dashboard$2.class
 com\mycompany\library_acces_management\LOGIC\Adminisrador_.class
+com\mycompany\library_acces_management\GUI\formAgregarMesa.class
 com\mycompany\library_acces_management\PERSISTENCE\AlumnoJpaController.class
 com\mycompany\library_acces_management\GUI\pnlTabla$1.class
 com\mycompany\library_acces_management\Library_Acces_Management.class
@@ -39,4 +40,5 @@ com\mycompany\library_acces_management\PERSISTENCE\exceptions\NonexistentEntityE
 com\mycompany\library_acces_management\GUI\pnlAdministrador$2.class
 com\mycompany\library_acces_management\GUI\pnlTablaMesa$2.class
 com\mycompany\library_acces_management\GUI\Dashboard$1.class
+com\mycompany\library_acces_management\GUI\formAgregarMesa$1.class
 com\mycompany\library_acces_management\PERSISTENCE\exceptions\IllegalOrphanException.class

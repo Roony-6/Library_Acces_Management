@@ -13,17 +13,12 @@ import javax.swing.table.DefaultTableModel;
 
 public class pnlTabla extends javax.swing.JPanel {
 
-  
     public pnlTabla() {
         initComponents();
         cargarTAbla();
     }
-    
     LogicController control= new LogicController();
     
-    
-
- 
        //metodo para hacer la tabla no editable
     public void cargarTAbla(){
         DefaultTableModel tableModel= new DefaultTableModel(){
@@ -33,9 +28,7 @@ public class pnlTabla extends javax.swing.JPanel {
                 return false;
             } 
         };
-        
         //nombres a columnas
-    
         String arrayTitulosTabla[]={"Id","Boleta","Fecha","Mesa","Sexo"};
         tableModel.setColumnIdentifiers(arrayTitulosTabla);
         
@@ -48,8 +41,7 @@ public class pnlTabla extends javax.swing.JPanel {
             for(Alumno alumnos: listAlumnos){
                 Object objeto[]={alumnos.getId(),alumnos.getBoleta(),alumnos.getFecha(),alumnos.getMesa().getTableType(),alumnos.getSexo()};
                 tableModel.addRow(objeto);
-            }
-            
+            } 
         }
     }
     //metodo para hacer modificacion (con validacion)
@@ -61,17 +53,14 @@ public class pnlTabla extends javax.swing.JPanel {
                formModificarAlumno modifAlum= new formModificarAlumno(idAlumno);
                modifAlum.setVisible(true);
                modifAlum.setLocationRelativeTo(null);
-               modifAlum.setSize(460, 400);
-                
-                
+               modifAlum.setSize(460, 400);  
             }else{
                 mostrarMensaje("No seleccionó ningun registro", "error", "Error al eliminar");
             }
             
         }else{
             mostrarMensaje("La tabla está vacia", "Error", "Tabla vacia");
-        }
-        
+        }  
     }
     
     //metodo para hacer eliminacion (con validacion)
@@ -80,13 +69,10 @@ public class pnlTabla extends javax.swing.JPanel {
             
             if(tableAlumnos.getSelectedRow()!=-1){
                 int idAlumno=Integer.parseInt(String.valueOf(tableAlumnos.getValueAt(tableAlumnos.getSelectedRow(), 0)));
-                confirmacion(idAlumno);
-                
-                
+                confirmacion(idAlumno); 
             }else{
                 mostrarMensaje("No seleccionó ningun registro", "error", "Error al eliminar");
-            }
-            
+            }           
         }else{
             mostrarMensaje("La tabla está vacia", "Error", "Tabla vacia");
         }
@@ -102,26 +88,19 @@ public class pnlTabla extends javax.swing.JPanel {
         }
         JDialog dialog= optionpane.createDialog(titulo);
         dialog.setAlwaysOnTop(true);
-        dialog.setVisible(true);
-        
-    }
-    
+        dialog.setVisible(true);        
+    }   
     //metodo para confirmar
-    
     public void confirmacion(int idAlumno){
         int response= JOptionPane.showConfirmDialog(this, "¿Está seguro de borrar este registro?", "Confirm", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);
         if(response==JOptionPane.YES_OPTION){
             control.deleteAlumno(idAlumno);
                 cargarTAbla();
-                mostrarMensaje("Registro borrado existosamente", "Info", "Borrado");
-           
-           
-        }else{
-            
+                mostrarMensaje("Registro borrado existosamente", "Info", "Borrado");               
+        }else{      
         }
     }
-  
-    @SuppressWarnings("unchecked")
+   @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
@@ -209,14 +188,9 @@ public class pnlTabla extends javax.swing.JPanel {
         );
     }// </editor-fold>//GEN-END:initComponents
 
-    
-    
     private void btnEliminarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEliminarActionPerformed
-       /* 
-        
-*/
+
        eliminarRegistro();
-       
         
     }//GEN-LAST:event_btnEliminarActionPerformed
 

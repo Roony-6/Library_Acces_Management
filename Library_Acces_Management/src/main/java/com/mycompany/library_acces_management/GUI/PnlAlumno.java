@@ -64,10 +64,7 @@ public class PnlAlumno extends javax.swing.JPanel {
             mostrarMensaje("Campos incompletos", "Error", "Complete todos los campos");
         }
     }
-    
-    public void eliminarRegistro(){
-        
-    }
+  
     
     public void mostrarMensaje(String mensaje, String tipo, String titulo){
         JOptionPane optionpane= new JOptionPane(mensaje);

@@ -11,6 +11,8 @@ public class pnlAdministrador extends javax.swing.JPanel {
 
     public pnlAdministrador() {
         initComponents();
+        pnlTabla pnlTabla= new pnlTabla();
+        showPanel(pnlTabla);
     }
    LogicController controlLogic=new LogicController();
 

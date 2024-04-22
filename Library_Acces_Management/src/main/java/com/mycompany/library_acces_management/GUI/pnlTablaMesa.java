@@ -104,18 +104,10 @@ public class pnlTablaMesa extends javax.swing.JPanel {
 
     LogicController control= new LogicController();
     private void btnAddMesaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddMesaActionPerformed
-
-        Scanner read= new Scanner(System.in);
-        pnlAddMesa pnlAddmesa= new pnlAddMesa();
-        
-        
-        System.out.println("dame el tipo de mesa");
-        
-        String tipoMesa= read.nextLine();
-        
-        control.createMesa(tipoMesa);
-        
-        
+ 
+        formAgregarMesa formAggMesa= new formAgregarMesa();
+        formAggMesa.setVisible(true);
+        formAggMesa.setLocationRelativeTo(null);
         
     }//GEN-LAST:event_btnAddMesaActionPerformed
 
