@@ -164,10 +164,7 @@ public class formModificarAlumno extends javax.swing.JFrame {
         }
     }
     
-    public void eliminarRegistro(){
-        
-    }
-    
+   
     public void mostrarMensaje(String mensaje, String tipo, String titulo){
         JOptionPane optionpane= new JOptionPane(mensaje);
         if(tipo.equals("Info")){

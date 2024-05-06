@@ -195,7 +195,7 @@ public class pnlTabla extends javax.swing.JPanel {
     }//GEN-LAST:event_btnEliminarActionPerformed
 
     private void btnModificarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnModificarActionPerformed
-modificarRegistro();
+    modificarRegistro();
     }//GEN-LAST:event_btnModificarActionPerformed
 
    
