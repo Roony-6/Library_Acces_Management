@@ -2,10 +2,13 @@ com\mycompany\library_acces_management\GUI\pnlAdministrador.class
 com\mycompany\library_acces_management\GUI\Dashboard.class
 com\mycompany\library_acces_management\LOGIC\Mesa.class
 com\mycompany\library_acces_management\GUI\pnlTablaAdmin$2.class
+com\mycompany\library_acces_management\GUI\formModifMesa.class
 com\mycompany\library_acces_management\GUI\formModificarAlumno$2.class
 com\mycompany\library_acces_management\GUI\Dashboard$3.class
 com\mycompany\library_acces_management\LOGIC\LogicController.class
+com\mycompany\library_acces_management\GUI\formAgregarAdmin$2.class
 com\mycompany\library_acces_management\LOGIC\Adminisrador_.class
+com\mycompany\library_acces_management\GUI\pnlTabla$4.class
 com\mycompany\library_acces_management\GUI\formAgregarMesa.class
 com\mycompany\library_acces_management\PERSISTENCE\AlumnoJpaController.class
 com\mycompany\library_acces_management\GUI\pnlTabla$1.class
@@ -13,12 +16,12 @@ com\mycompany\library_acces_management\GUI\pnlAdministrador$3.class
 com\mycompany\library_acces_management\GUI\pnlTablaMesa$1.class
 com\mycompany\library_acces_management\GUI\pnlTablaAdmin.class
 com\mycompany\library_acces_management\GUI\formModificarAlumno$1.class
-com\mycompany\library_acces_management\GUI\pnlAddMesa.class
+com\mycompany\library_acces_management\GUI\formModifMesa$1.class
 com\mycompany\library_acces_management\PERSISTENCE\MesaJpaController.class
 com\mycompany\library_acces_management\GUI\formModifAdmin$1.class
+com\mycompany\library_acces_management\GUI\pnlTablaMesa$4.class
 com\mycompany\library_acces_management\GUI\pnlTablaAdmin$1.class
 com\mycompany\library_acces_management\LOGIC\Alumno.class
-com\mycompany\library_acces_management\GUI\formModificarAdministrador.class
 com\mycompany\library_acces_management\GUI\PnlAlumno$2.class
 com\mycompany\library_acces_management\GUI\pnlTablaMesa.class
 com\mycompany\library_acces_management\GUI\pnlAdministrador$2.class
@@ -27,10 +30,12 @@ com\mycompany\library_acces_management\GUI\pnlAdministrador$1.class
 com\mycompany\library_acces_management\LOGIC\Mesa_.class
 com\mycompany\library_acces_management\PERSISTENCE\exceptions\PreexistingEntityException.class
 com\mycompany\library_acces_management\GUI\pnlTabla$3.class
+com\mycompany\library_acces_management\GUI\pnlTablaMesa$3.class
 com\mycompany\library_acces_management\GUI\formModificarAlumno$4.class
 com\mycompany\library_acces_management\GUI\formModificarAlumno.class
 com\mycompany\library_acces_management\LOGIC\Alumno_.class
 com\mycompany\library_acces_management\GUI\Dashboard$2.class
+com\mycompany\library_acces_management\GUI\formAgregarMesa$2.class
 com\mycompany\library_acces_management\GUI\pnlTablaAdmin$4.class
 com\mycompany\library_acces_management\Library_Acces_Management.class
 com\mycompany\library_acces_management\GUI\PnlAlumno$1.class
@@ -41,7 +46,6 @@ com\mycompany\library_acces_management\GUI\PnlAlumno.class
 com\mycompany\library_acces_management\GUI\pnlTabla.class
 com\mycompany\library_acces_management\LOGIC\Adminisrador.class
 com\mycompany\library_acces_management\GUI\formAgregarAdmin.class
-com\mycompany\library_acces_management\GUI\formModificarAdministrador$1.class
 com\mycompany\library_acces_management\GUI\PnlInicio.class
 com\mycompany\library_acces_management\GUI\formModificarAlumno$3.class
 com\mycompany\library_acces_management\GUI\formModifAdmin.class
@@ -50,6 +54,7 @@ com\mycompany\library_acces_management\GUI\formModifAdmin$3.class
 com\mycompany\library_acces_management\PERSISTENCE\exceptions\NonexistentEntityException.class
 com\mycompany\library_acces_management\GUI\pnlTablaMesa$2.class
 com\mycompany\library_acces_management\GUI\pnlTablaAdmin$3.class
+com\mycompany\library_acces_management\GUI\formModifMesa$2.class
 com\mycompany\library_acces_management\GUI\Dashboard$1.class
 com\mycompany\library_acces_management\GUI\formAgregarMesa$1.class
 com\mycompany\library_acces_management\GUI\formAgregarAdmin$1.class

@@ -57,8 +57,17 @@
             <artifactId>AbsoluteLayout</artifactId>
             <version>RELEASE180</version>
         </dependency>
+        <dependency>
+    <groupId>com.itextpdf</groupId>
+    <artifactId>itext7-core</artifactId>
+    <version>7.2.3</version>
+    <type>pom</type>
+</dependency>
     </dependencies>
     <properties>
+        <img src="inicio.jpg"></img>
+        <img src="logocecyt3.png"></img>
+        <img src="IPN-Logo.png"></img>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>

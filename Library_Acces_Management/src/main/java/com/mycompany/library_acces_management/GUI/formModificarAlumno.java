@@ -34,6 +34,7 @@ public class formModificarAlumno extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel4 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         cboxSexo = new javax.swing.JComboBox<>();
         txtBoleta = new javax.swing.JTextField();
@@ -41,32 +42,41 @@ public class formModificarAlumno extends javax.swing.JFrame {
         btnModificar = new javax.swing.JButton();
         txtFecha = new javax.swing.JTextField();
         btnCancelar = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+
+        jLabel4.setText("Tipo de Mesa");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
-        setUndecorated(true);
 
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        cboxSexo.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         cboxSexo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Mujer", "Hombre" }));
-        jPanel1.add(cboxSexo, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 270, 80, -1));
+        jPanel1.add(cboxSexo, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 260, 180, -1));
 
+        txtBoleta.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         txtBoleta.setBorder(null);
         txtBoleta.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 txtBoletaKeyTyped(evt);
             }
         });
-        jPanel1.add(txtBoleta, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 90, 160, 20));
+        jPanel1.add(txtBoleta, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 90, 180, 20));
 
+        cboxMesas.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         cboxMesas.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cboxMesasActionPerformed(evt);
             }
         });
-        jPanel1.add(cboxMesas, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 210, 160, -1));
+        jPanel1.add(cboxMesas, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 200, 180, -1));
 
         btnModificar.setBackground(new java.awt.Color(78, 107, 227));
-        btnModificar.setFont(new java.awt.Font("Impact", 0, 18)); // NOI18N
+        btnModificar.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         btnModificar.setForeground(new java.awt.Color(255, 255, 255));
         btnModificar.setText("MODIFICAR");
         btnModificar.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
@@ -75,11 +85,13 @@ public class formModificarAlumno extends javax.swing.JFrame {
                 btnModificarActionPerformed(evt);
             }
         });
-        jPanel1.add(btnModificar, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 320, -1, -1));
-        jPanel1.add(txtFecha, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 140, 150, -1));
+        jPanel1.add(btnModificar, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 320, 170, -1));
+
+        txtFecha.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
+        jPanel1.add(txtFecha, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 140, 180, -1));
 
         btnCancelar.setBackground(new java.awt.Color(255, 0, 0));
-        btnCancelar.setFont(new java.awt.Font("Impact", 0, 18)); // NOI18N
+        btnCancelar.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         btnCancelar.setForeground(new java.awt.Color(255, 255, 255));
         btnCancelar.setText("CANCELAR");
         btnCancelar.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
@@ -88,19 +100,37 @@ public class formModificarAlumno extends javax.swing.JFrame {
                 btnCancelarActionPerformed(evt);
             }
         });
-        jPanel1.add(btnCancelar, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 320, -1, -1));
+        jPanel1.add(btnCancelar, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 320, -1, -1));
+
+        jLabel1.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
+        jLabel1.setText("Tipo de mesa");
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 210, -1, -1));
+
+        jLabel2.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
+        jLabel2.setText("Boleta");
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 90, -1, -1));
+
+        jLabel3.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
+        jLabel3.setText("Fecha");
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 150, -1, -1));
+
+        jLabel5.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
+        jLabel5.setText("Sexo");
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 270, -1, -1));
+
+        jLabel6.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
+        jLabel6.setText("MODIFICAR INFORMACION ALUMNO");
+        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 30, -1, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 435, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 426, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 384, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 8, Short.MAX_VALUE))
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 401, Short.MAX_VALUE)
         );
 
         pack();
@@ -230,6 +260,12 @@ this.dispose();
     private javax.swing.JButton btnModificar;
     private javax.swing.JComboBox<String> cboxMesas;
     private javax.swing.JComboBox<String> cboxSexo;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JTextField txtBoleta;
     private javax.swing.JTextField txtFecha;

@@ -28,42 +28,60 @@ public class pnlTablaAdmin extends javax.swing.JPanel {
         btnAddAdmin = new javax.swing.JButton();
         btnEliminar1 = new javax.swing.JButton();
         btnModificar = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
         jScrollPane1.setViewportView(tableAdmin);
 
+        btnAddAdmin.setBackground(new java.awt.Color(51, 102, 255));
+        btnAddAdmin.setFont(new java.awt.Font("SansSerif", 0, 12)); // NOI18N
         btnAddAdmin.setText("Agregar Admin");
+        btnAddAdmin.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnAddAdmin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAddAdminActionPerformed(evt);
             }
         });
 
+        btnEliminar1.setBackground(new java.awt.Color(255, 51, 51));
+        btnEliminar1.setFont(new java.awt.Font("SansSerif", 0, 12)); // NOI18N
         btnEliminar1.setText("Eliminar");
+        btnEliminar1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnEliminar1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnEliminar1ActionPerformed(evt);
             }
         });
 
+        btnModificar.setBackground(new java.awt.Color(51, 102, 255));
+        btnModificar.setFont(new java.awt.Font("SansSerif", 0, 12)); // NOI18N
         btnModificar.setText("Modificar");
+        btnModificar.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnModificar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnModificarActionPerformed(evt);
             }
         });
 
+        jLabel1.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
+        jLabel1.setText("TABLA ADMINISTRADORES");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 421, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(btnAddAdmin, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btnModificar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btnEliminar1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 421, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(btnAddAdmin, javax.swing.GroupLayout.DEFAULT_SIZE, 111, Short.MAX_VALUE)
+                            .addComponent(btnModificar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(btnEliminar1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(162, 162, 162)
+                        .addComponent(jLabel1)))
                 .addContainerGap(47, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -78,9 +96,11 @@ public class pnlTablaAdmin extends javax.swing.JPanel {
                         .addGap(18, 18, 18)
                         .addComponent(btnEliminar1))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(22, 22, 22)
+                        .addGap(24, 24, 24)
+                        .addComponent(jLabel1)
+                        .addGap(18, 18, 18)
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 349, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(115, Short.MAX_VALUE))
+                .addContainerGap(71, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -175,9 +195,9 @@ public class pnlTablaAdmin extends javax.swing.JPanel {
             
             if(tableAdmin.getSelectedRow()!=-1){
                 int idAdmin=Integer.parseInt(String.valueOf(tableAdmin.getValueAt(tableAdmin.getSelectedRow(), 0)));
-               formModifAdmin modifAdmin= new formModifAdmin(idAdmin);
-               modifAdmin.setLocationRelativeTo(null);
-               modifAdmin.setVisible(true);
+               formModifAdmin modifMesa= new formModifAdmin(idAdmin);
+               modifMesa.setLocationRelativeTo(null);
+               modifMesa.setVisible(true);
                 
             }else{
                 mostrarMensaje("No seleccionó ningun registro", "error", "Error al eliminar");
@@ -191,6 +211,7 @@ public class pnlTablaAdmin extends javax.swing.JPanel {
     private javax.swing.JButton btnAddAdmin;
     private javax.swing.JButton btnEliminar1;
     private javax.swing.JButton btnModificar;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable tableAdmin;
     // End of variables declaration//GEN-END:variables
