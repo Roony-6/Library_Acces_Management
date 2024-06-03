@@ -239,7 +239,7 @@ public class pnlTabla extends javax.swing.JPanel {
     private void btnGenerarReporteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGenerarReporteActionPerformed
        
         try {
-            createPdfFromJTable(tableAlumnos, "C:\\pdf\\reporte.pdf");
+            createPdfFromJTable(tableAlumnos, "C:\\pdf\\report.pdf");
         } catch (FileNotFoundException ex) {
             Logger.getLogger(pnlTabla.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -272,6 +272,7 @@ public class pnlTabla extends javax.swing.JPanel {
     // Add the table to the document
     document.add(pdfTable);
     document.close();
+        mostrarMensaje("pdf creado", "", "Reporte generado");
 }
    
     //AGREGAR METODO DE VALIDACION Y DE MOSTRAR MENSAJE

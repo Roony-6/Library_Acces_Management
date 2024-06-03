@@ -247,6 +247,8 @@ public class Dashboard extends javax.swing.JFrame {
 
     private void btnAdministradorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAdministradorActionPerformed
 
+        login ob= new login();
+        ob.setVisible(true);
         pnlAdministrador pnlAdmmin= new pnlAdministrador();
         showPanel(pnlAdmmin);
        
