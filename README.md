@@ -1,0 +1,1 @@
+Este software gestiona los accesos de los alumnos a la biblioteca. Es un proyecto escolar para poder graduarme de la preparatoria. Cabe recalcar que es un software específico que se elaboró para mejorar el sistema anterior, el cual usaba Excel
